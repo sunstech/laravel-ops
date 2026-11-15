@@ -1,0 +1,54 @@
+{
+    "name": "sunstech/laravel-ops",
+    "description": "Laravel uygulamaları için SUNS CMS Merkez izleme uçları: sağlık kontrolü ve ops özeti (sürüm, kuyruk, zamanlayıcı, yedek, disk, sunucu).",
+    "keywords": ["laravel", "monitoring", "health-check", "ops", "suns"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SUNS Technology",
+            "homepage": "https://sunstech.com.tr"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "suggest": {
+        "spatie/laravel-backup": "Kuruluysa son yedeğin tarihi ve boyutu ops özetinde raporlanır."
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunstech\\LaravelOps\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sunstech\\LaravelOps\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sunstech\\LaravelOps\\OpsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "format": "pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
