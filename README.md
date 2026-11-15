@@ -14,7 +14,7 @@ Laravel uygulamalarının [SUNS CMS Merkez](https://hub.sunstech.com.tr) tarafı
 - yedek eskiyse,
 - disk doluysa.
 
-Laravel 11 ve 12, PHP 8.2 ve üstü desteklenir.
+Laravel 11 ve 12, PHP 8.2 ve üstü desteklenir. Laravel 11'in güvenlik desteği sona erdi; bu sürümdeki projelerin 12'ye geçmesi önerilir.
 
 ## Kurulum
 
